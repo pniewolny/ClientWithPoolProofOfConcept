@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/ClientWithPoolProofOfConcept.Shared.Web" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ClientWithPoolProofOfConcept.Shared.Web" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:53797/Service/CommunicationService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Person">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddedManually" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ClientFk" type="xs:int" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Person" nillable="true" type="tns:Person" />
+  <xs:complexType name="WorkCenter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddedManually" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ClientFk" type="xs:int" />
+      <xs:element minOccurs="0" name="CreationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WorkCenter" nillable="true" type="tns:WorkCenter" />
+  <xs:complexType name="DataDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Persons" nillable="true" type="tns:ArrayOfPerson" />
+      <xs:element minOccurs="0" name="WorkCenters" nillable="true" type="tns:ArrayOfWorkCenter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataDto" nillable="true" type="tns:DataDto" />
+  <xs:complexType name="ArrayOfPerson">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Person" nillable="true" type="tns:Person" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPerson" nillable="true" type="tns:ArrayOfPerson" />
+  <xs:complexType name="ArrayOfWorkCenter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WorkCenter" nillable="true" type="tns:WorkCenter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWorkCenter" nillable="true" type="tns:ArrayOfWorkCenter" />
+</xs:schema>

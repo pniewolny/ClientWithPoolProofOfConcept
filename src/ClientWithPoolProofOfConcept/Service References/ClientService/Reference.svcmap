@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0fb2283d-00ac-4581-b8bd-54abf3f78943" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="ClientWithPoolProofOfConcept.Shared.Client" />
+      <ReferencedAssembly AssemblyName="System.ServiceModel.PollingDuplex" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53797/Service/CommunicationService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CommunicationService.disco" MetadataType="Disco" ID="9de71940-8c1d-4715-82d3-8ad56b69989b" SourceId="1" SourceUrl="http://localhost:53797/Service/CommunicationService.svc?disco" />
+    <MetadataFile FileName="CommunicationService.xsd" MetadataType="Schema" ID="1622f8cc-e345-4711-ae13-fc0ff68ced8d" SourceId="1" SourceUrl="http://localhost:53797/Service/CommunicationService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CommunicationService1.xsd" MetadataType="Schema" ID="42df3da9-5b97-46f5-85f7-92afb2d1e26d" SourceId="1" SourceUrl="http://localhost:53797/Service/CommunicationService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CommunicationService.wsdl" MetadataType="Wsdl" ID="987c5dc3-07d1-4838-9521-25de1785d091" SourceId="1" SourceUrl="http://localhost:53797/Service/CommunicationService.svc?wsdl" />
+    <MetadataFile FileName="CommunicationService2.xsd" MetadataType="Schema" ID="e5959c63-8593-4358-9e77-82513d80d8b4" SourceId="1" SourceUrl="http://localhost:53797/Service/CommunicationService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CommunicationService3.xsd" MetadataType="Schema" ID="a9da60f6-e648-414e-8ee3-8fa9caccb360" SourceId="1" SourceUrl="http://localhost:53797/Service/CommunicationService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,43 @@
+﻿<helper:RadWindowBase x:Class="ClientWithPoolProofOfConcept.AddWorkCenter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    xmlns:viewModels="clr-namespace:ClientWithPoolProofOfConcept.ViewModels"
+    xmlns:clientWithPoolProofOfConcept="clr-namespace:ClientWithPoolProofOfConcept"
+    xmlns:helper="clr-namespace:ClientWithPoolProofOfConcept.Helper"
+    mc:Ignorable="d" WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
+    d:DesignHeight="300" d:DesignWidth="400" Header="Add work center">
+
+    <telerik:RadWindow.Resources>
+        <viewModels:AddWorkCenterViewModel x:Key="ViewModel" />
+    </telerik:RadWindow.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="White" DataContext="{StaticResource ViewModel}" Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" MinWidth="150"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin="5" Text="Name: "  />
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="5" Text="{Binding WorkCenter.Name, Mode=TwoWay}" />
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="5" Text="Notify (added manually)" />
+            <CheckBox Grid.Row="1" Grid.Column="1" Margin="5" IsChecked="{Binding WorkCenter.AddedManually, Mode=TwoWay}" />
+        </Grid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Save" Command="{Binding SaveCommand}" Margin="5" Width="75" Height="25" />
+            <Button Content="Close" Command="{Binding CloseCommand}" Margin="5" Width="75" Height="25" />
+        </StackPanel>
+    </Grid>
+</helper:RadWindowBase>

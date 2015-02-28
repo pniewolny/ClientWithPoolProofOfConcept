@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWithPoolProofOfConcept", "ClientWithPoolProofOfConcept\ClientWithPoolProofOfConcept.csproj", "{CEE44DCC-9138-461F-97CB-24ADC50DD2EA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{973A70D0-1A0F-429D-A79E-7E34E71931B1} = {973A70D0-1A0F-429D-A79E-7E34E71931B1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWithPoolProofOfConcept.Web", "ClientWithPoolProofOfConcept.Web\ClientWithPoolProofOfConcept.Web.csproj", "{973A70D0-1A0F-429D-A79E-7E34E71931B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWithPoolProofOfConcept.Shared.Web", "ClientWithPoolProofOfConcept.Shared.Web\ClientWithPoolProofOfConcept.Shared.Web.csproj", "{E01D803C-6208-41B3-ABE8-228705817B58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWithPoolProofOfConcept.Shared.Client", "ClientWithPoolProofOfConcept.Shared.Client\ClientWithPoolProofOfConcept.Shared.Client.csproj", "{1B429A4C-D9AE-4D71-A0B8-5F9D0AE70F27}"
+	ProjectSection(ProjectDependencies) = postProject
+		{973A70D0-1A0F-429D-A79E-7E34E71931B1} = {973A70D0-1A0F-429D-A79E-7E34E71931B1}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BA68C44C-A1FE-41EE-A18D-4DD4199AC1A4}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEE44DCC-9138-461F-97CB-24ADC50DD2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE44DCC-9138-461F-97CB-24ADC50DD2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE44DCC-9138-461F-97CB-24ADC50DD2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE44DCC-9138-461F-97CB-24ADC50DD2EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{973A70D0-1A0F-429D-A79E-7E34E71931B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973A70D0-1A0F-429D-A79E-7E34E71931B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973A70D0-1A0F-429D-A79E-7E34E71931B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973A70D0-1A0F-429D-A79E-7E34E71931B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E01D803C-6208-41B3-ABE8-228705817B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E01D803C-6208-41B3-ABE8-228705817B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E01D803C-6208-41B3-ABE8-228705817B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E01D803C-6208-41B3-ABE8-228705817B58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B429A4C-D9AE-4D71-A0B8-5F9D0AE70F27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B429A4C-D9AE-4D71-A0B8-5F9D0AE70F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B429A4C-D9AE-4D71-A0B8-5F9D0AE70F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B429A4C-D9AE-4D71-A0B8-5F9D0AE70F27}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

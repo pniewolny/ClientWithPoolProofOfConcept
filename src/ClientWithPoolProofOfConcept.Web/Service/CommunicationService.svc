@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ClientWithPoolProofOfConcept.Web.Service.CommunicationService" CodeBehind="CommunicationService.svc.cs" %>
